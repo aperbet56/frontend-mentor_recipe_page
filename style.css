@@ -1,0 +1,169 @@
+/**** Reset ****/
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**** Style général de la page ****/
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(30, 54%, 90%);
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    font-family: "Outfit", sans-serif;
+    width: 65%;
+    margin: 60px auto;
+    border-radius: 20px;
+    line-height: 30px;
+}
+
+.container__intern {
+    width: 85%;
+    margin: auto
+}
+
+.header__img {
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+h1 {
+    font-family: "Young Serif", serif;
+    font-size: 40px;
+    color: hsl(24, 5%, 18);
+    margin: 30px 0;
+}
+
+.description {
+    color: hsl(30, 10%, 34%);
+    margin-left: 15px;
+}
+
+.main__content {
+    flex-grow: 1;
+}
+
+.preparation__section {
+    background-color: hsl(330, 100%, 98%);
+    text-align: justify;
+    margin-top: 50px;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.preparation__section__title {
+    font-family: "Outfit", sans-serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: hsl(332, 51%, 32%);
+}
+
+.preparation__section span {
+    font-weight: 700;
+    color: hsl(24, 5%, 18%);
+}
+
+.preparation__list,
+.ingredients__list {
+    color: hsl(30, 10%, 34%);
+}
+
+.preparation__list__item {
+    padding-left: 30px;
+}
+
+.section__title {
+    font-family: "Outfit", sans-serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: hsl(14, 45%, 36%);
+}
+
+.ingredients__section,
+.instructions__section,
+.nutrition__section {
+    margin-top: 40px;
+}
+
+.ingredients__list {
+    margin-left: 15px;
+}
+
+.ingredients__list__item {
+    padding-left: 30px;
+}
+
+.separate__bar {
+    width: 100%;
+    border: 1px solid hsl(30, 18%, 87%);
+    margin-top: 40px;
+}
+
+.instructions__section span {
+    font-weight: 700;
+    color: hsl(24, 5%, 18%);
+}
+
+.instructions__list {
+    margin-left: 15px;
+}
+
+.instructions__list__item {
+    padding-left: 30px;
+    color: hsl(30, 10%, 34%);
+}
+
+.nutrition__section {
+    padding-bottom: 40px;
+}
+
+.nutrition__section__description {
+    color: hsl(30, 10%, 34%);
+    margin: 12px 0;
+}
+
+.database .data {
+    display: flex;
+}
+
+.database .data .name {
+    margin-left: 15px;
+    width: 50%;
+    color: hsl(30, 10%, 34%);
+}
+
+.database .data .number {
+    color: hsl(332, 51%, 32%);
+    font-weight: 600;
+}
+
+.separate__bar__nutrition {
+    width: 100%;
+    border: 1px solid hsl(30, 18%, 87%);
+    margin: 10px 0;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Outfit", sans-serif;
+    margin-bottom: 30px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
