@@ -8,6 +8,15 @@
     box-sizing: border-box;
 }
 
+ul,
+ol {
+    list-style-type: none;
+}
+
+ol {
+    counter-reset: li;
+}
+
 /**** Style général de la page ****/
 
 body {
@@ -76,13 +85,14 @@ h1 {
     color: hsl(24, 5%, 18%);
 }
 
-.preparation__list,
-.ingredients__list {
-    color: hsl(30, 10%, 34%);
+.preparation__list__item::before {
+    content: "\2022";
+    color: hsl(332, 51%, 32%);
+    margin-right: 15px;
 }
 
 .preparation__list__item {
-    padding-left: 30px;
+    padding-left: 10px;
 }
 
 .section__title {
@@ -98,12 +108,14 @@ h1 {
     margin-top: 40px;
 }
 
-.ingredients__list {
-    margin-left: 15px;
+.ingredients__list__item::before {
+    content: "\2022";
+    color: hsl(14, 45%, 36%);
+    margin-right: 15px;
 }
 
 .ingredients__list__item {
-    padding-left: 30px;
+    padding-left: 10px;
 }
 
 .separate__bar {
@@ -117,13 +129,18 @@ h1 {
     color: hsl(24, 5%, 18%);
 }
 
-.instructions__list {
-    margin-left: 15px;
+.instructions__list__item::before {
+    content: counter(li);
+    color: hsl(14, 45%, 36%);
+    display: inline-block;
+    width: 16px;
+    margin-left: -16px;
 }
 
 .instructions__list__item {
     padding-left: 30px;
     color: hsl(30, 10%, 34%);
+    counter-increment: li;
 }
 
 .nutrition__section {
@@ -202,10 +219,6 @@ footer {
 
     .preparation__section__title {
         font-size: 20px;
-    }
-
-    .preparation__list {
-        padding-left: 25px;
     }
 
     .ingredients__section,
