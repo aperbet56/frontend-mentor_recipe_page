@@ -134,7 +134,7 @@ h1 {
     color: hsl(14, 45%, 36%);
     display: inline-block;
     width: 16px;
-    margin-left: -16px;
+    margin-left: -18px;
 }
 
 .instructions__list__item {
@@ -181,10 +181,11 @@ footer {
     font-size: 18px;
     font-family: "Outfit", sans-serif;
     margin-bottom: 30px;
+    line-height: 1.4;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: hsl(332, 51%, 32%);
 }
 
 /**** Responsive design version mobile ****/
