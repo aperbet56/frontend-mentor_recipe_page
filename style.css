@@ -130,11 +130,12 @@ h1 {
 }
 
 .instructions__list__item::before {
-    content: counter(li);
+    content: counter(li) ".";
     color: hsl(14, 45%, 36%);
     display: inline-block;
     width: 16px;
     margin-left: -18px;
+    font-weight: 800;
 }
 
 .instructions__list__item {
